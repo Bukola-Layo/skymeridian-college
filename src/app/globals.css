@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@theme {
+  --color-meridian-navy: #203B7C;
+  --color-meridian-navy-50: #e8ecf5;
+  --color-meridian-navy-100: #c5cde6;
+  --color-meridian-navy-200: #9eaad4;
+  --color-meridian-navy-300: #7787c2;
+  --color-meridian-navy-400: #5a6db4;
+  --color-meridian-navy-500: #3d53a6;
+  --color-meridian-navy-600: #2e4491;
+  --color-meridian-navy-700: #203B7C;
+  --color-meridian-navy-800: #1a2f63;
+  --color-meridian-navy-900: #12224a;
+
+  --color-sky-gold: #D8A62A;
+  --color-sky-gold-50: #fdf5e6;
+  --color-sky-gold-100: #f9e6c1;
+  --color-sky-gold-200: #f4d598;
+  --color-sky-gold-300: #efc46f;
+  --color-sky-gold-400: #ebb74e;
+  --color-sky-gold-500: #e7aa2e;
+  --color-sky-gold-600: #D8A62A;
+  --color-sky-gold-700: #c49525;
+  --color-sky-gold-800: #b08420;
+  --color-sky-gold-900: #8e6718;
+
+  --color-light-gray: #F7F8FA;
+  --color-soft-blue-gray: #E9EDF6;
+  --color-dark-slate: #2F3645;
+  --color-muted-gray: #6B7280;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-soft-blue-gray);
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-dark-slate);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background-color: var(--color-meridian-navy);
+    color: #ffffff;
+  }
+}
+
+@utility container-main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (width >= 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@utility section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @media (width >= 768px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (width >= 1024px) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@utility gradient-navy {
+  background: linear-gradient(135deg, var(--color-meridian-navy) 0%, #12224a 100%);
+}
+
+@utility gradient-gold {
+  background: linear-gradient(135deg, var(--color-sky-gold) 0%, #c49525 100%);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* === Beam Animation === */
+@keyframes beam-move {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateX(-5%) translateY(-2%);
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(5%) translateY(2%);
+  }
+  75% {
+    opacity: 0.7;
+  }
+}
+
+.animate-beam {
+  animation: beam-move 8s ease-in-out infinite;
+}
+
+/* === Radix UI Animations === */
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@keyframes overlay-show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes overlay-hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes content-show {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes content-hide {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(100%); }
+}
+
+@keyframes dialog-content-show {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes dialog-content-hide {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+}
+
+[data-state="open"] > [data-radix-accordion-content] {
+  animation: accordion-down 200ms ease-out;
+}
+
+[data-state="closed"] > [data-radix-accordion-content] {
+  animation: accordion-up 200ms ease-out;
+}
+
+.DialogOverlay[data-state="open"],
+.SheetOverlay[data-state="open"] {
+  animation: overlay-show 200ms ease-out;
+}
+
+.DialogOverlay[data-state="closed"],
+.SheetOverlay[data-state="closed"] {
+  animation: overlay-hide 200ms ease-out;
+}
+
+.DialogContent[data-state="open"] {
+  animation: dialog-content-show 200ms ease-out;
+}
+
+.DialogContent[data-state="closed"] {
+  animation: dialog-content-hide 200ms ease-in;
+}
+
+.SheetContent[data-state="open"] {
+  animation: content-show 300ms ease-out;
+}
+
+.SheetContent[data-state="closed"] {
+  animation: content-hide 300ms ease-in;
+}
