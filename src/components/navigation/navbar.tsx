@@ -21,7 +21,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="hidden overflow-hidden bg-meridian-navy text-xs md:block">
+      <div className="overflow-hidden bg-meridian-navy text-xs">
         <div className="flex h-8 items-center">
           <div className="animate-marquee flex shrink-0 items-center gap-12 whitespace-nowrap">
             <span className="text-sky-gold font-medium uppercase tracking-wider">★ Admission for September Intake 2026 Ongoing ★</span>
