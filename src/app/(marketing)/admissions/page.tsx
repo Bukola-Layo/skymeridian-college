@@ -83,7 +83,7 @@ export default function AdmissionsPage() {
               </h2>
               <p className="mt-4 text-muted-gray">
                 Select your preferred admission pathway below to view the specific requirements
-                for JAMB, JUPEB, Part Time, and Direct Entry into Sky Meridian College.
+                for JUPEB, Part Time, and Direct Entry into Sky Meridian College.
               </p>
               <div className="mt-8">
                 <AdmissionPathways pathways={admissionPathways} />
