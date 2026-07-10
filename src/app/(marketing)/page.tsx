@@ -2,8 +2,8 @@ import { Hero } from "@/components/hero/hero"
 import { AboutSection } from "@/components/sections/about-section"
 import { Announcement } from "@/components/sections/announcement"
 import { ProvostWelcome } from "@/components/sections/provost-welcome"
-import { Welcome } from "@/components/sections/welcome"
 import { FeaturedPrograms } from "@/components/sections/featured-programs"
+import { FlexibleAcademicLearning } from "@/components/sections/flexible-learning"
 import { WhyChoose } from "@/components/sections/why-choose"
 import { FacultiesOverview } from "@/components/sections/faculties-overview"
 
@@ -19,8 +19,8 @@ export default function HomePage() {
       <AboutSection />
       <Announcement />
       <ProvostWelcome />
-      <Welcome />
       <FeaturedPrograms />
+      <FlexibleAcademicLearning />
       <WhyChoose />
       <FacultiesOverview />
 

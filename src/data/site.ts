@@ -8,7 +8,7 @@ export const siteConfig: SiteConfig = {
     "Sky Meridian College of Health Sciences and Management Technology is a premier institution dedicated to providing world-class education in health sciences and management technology.",
   url: "https://skymeridian.edu.ng",
   contact: {
-    address: "123 Education Boulevard, Ikeja, Lagos State, Nigeria",
+    address: "1, Adifala street, Ososami Ring road, Iyana Adeoyo Busstop, Ibadan, Oyo state",
     phone: "+234 800 000 0000",
     email: "info@skymeridian.edu.ng",
     admissionsEmail: "admissions@skymeridian.edu.ng",

@@ -22,27 +22,36 @@ export function ProvostWelcome() {
                 Provost&apos;s Welcome
               </div>
               <h2 className="text-2xl font-bold text-meridian-navy md:text-3xl lg:text-4xl">
-                Where Tradition Meets Transformation
+                Welcome to Sky Meridian College of Health Sciences and Management Technology
               </h2>
               <div className="mt-6 space-y-4 text-muted-gray leading-relaxed">
                 <p>
-                  It is with profound gratitude and a bold sense of vision that I welcome you to
-                  Sky Meridian College of Health Sciences and Management Technology. We are not
-                  simply extending education beyond traditional classrooms — we are reimagining
-                  the future of learning, building a bridge between aspiration, opportunity, and
-                  achievement.
+                  It gives me great pleasure to welcome you to an institution committed to
+                  preparing competent professionals and visionary leaders in health sciences,
+                  management, and technology. At Sky Meridian, we believe that education is not
+                  only about acquiring knowledge but also about developing the character,
+                  creativity, and social responsibility needed to make a meaningful impact in
+                  society.
                 </p>
                 <p>
-                  Our mission is to deliver excellence without borders — empowering learners
-                  regardless of their background and preparing students to thrive in a knowledge
-                  economy defined by innovation and adaptability. Whether you are starting your
-                  academic journey or advancing your career, Sky Meridian offers flexible,
-                  world-class education tailored for you.
+                  Our mission is to empower students through innovative teaching, practical
+                  learning experiences, interdisciplinary collaboration, and community engagement.
+                  We are dedicated to creating an environment that inspires academic excellence,
+                  encourages critical thinking, and equips our students with the skills required
+                  to thrive in a rapidly evolving world.
                 </p>
                 <p>
-                  At Sky Meridian, your ambition is valid, your goals are achievable, and your
-                  success is our priority. I invite you to explore our programmes, visit our
-                  campus, and join a community dedicated to healthcare and management excellence.
+                  As you explore our programmes and facilities, you will discover a college that
+                  values professionalism, integrity, compassion, and lifelong learning. Whether
+                  you are a prospective student, parent, partner, or visitor, we invite you to
+                  become part of a vibrant community that is passionate about transforming
+                  healthcare delivery and improving lives.
+                </p>
+                <p>
+                  On behalf of the Governing Council, management, staff, and students, I warmly
+                  welcome you to Sky Meridian College of Health Sciences and Management
+                  Technology. We look forward to accompanying you on a rewarding journey of
+                  learning, growth, and achievement.
                 </p>
               </div>
               <div className="mt-6 border-l-4 border-sky-gold pl-4">

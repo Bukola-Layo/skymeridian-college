@@ -2,18 +2,18 @@ import type { AdmissionPathway } from "@/types"
 
 export const admissionPathways: AdmissionPathway[] = [
   {
-    id: "utme",
-    label: "UTME",
+    id: "entrance-exam",
+    label: "Entrance Exam",
     description:
-      "Candidates seeking admission through UTME must meet the following requirements and follow the prescribed process.",
+      "Candidates seeking admission through Entrance Exam must meet the following requirements and follow the prescribed process.",
     sections: [
       {
         title: "Admission Requirements",
         items: [
-          "Choose Sky Meridian College of Health Sciences and Management Technology as their preferred institution through JAMB or process a Change of Institution to Sky Meridian College.",
+
           "Possess a minimum of five (5) credit passes in relevant O&apos;Level subjects, including English Language and Mathematics.",
           "Obtain the O&apos;Level credits in not more than two sittings.",
-          "Meet the institution&apos;s approved JAMB UTME cut-off mark.",
+          "Meet the institution&apos;s approved Entrance Exam cut-off mark.",
           "Participate in the Sky Meridian College admission screening exercise.",
         ],
         subItemsLabel: "Acceptable examination bodies include:",
@@ -27,8 +27,8 @@ export const admissionPathways: AdmissionPathway[] = [
       {
         title: "Admission Process",
         items: [
-          "Register and sit for the JAMB UTME examination.",
-          "Choose Sky Meridian College of Health Sciences and Management Technology as your first-choice institution or apply for a Change of Institution through JAMB.",
+          "Register and sit for the Entrance Exam.",
+
           "Purchase and complete the College&apos;s admission application form.",
           "Upload your O&apos;Level results and other required credentials.",
           "Participate in the admission screening process.",

@@ -5,15 +5,12 @@ import {
   Users,
   MailCheck,
   CreditCard,
-  Download,
-  Calendar,
 } from "lucide-react"
 import { Container } from "@/components/shared/container"
 import { SectionHeading } from "@/components/shared/section-heading"
-import { Button } from "@/components/ui/button"
 import { AdmissionPathways } from "@/components/sections/admission-pathways"
+import { ImportantDates } from "@/components/sections/important-dates"
 import { admissionPathways } from "@/data/admission-pathways"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Admissions",
@@ -54,14 +51,6 @@ const process = [
   },
 ]
 
-const importantDates = [
-  { label: "Application Opens", date: "August 1, 2026" },
-  { label: "Application Deadline", date: "October 31, 2026" },
-  { label: "Interview Period", date: "November 2026" },
-  { label: "Admission Decisions", date: "December 2026" },
-  { label: "Session Begins", date: "January 2027" },
-]
-
 export default function AdmissionsPage() {
   return (
     <>
@@ -72,6 +61,13 @@ export default function AdmissionsPage() {
             subtitle="Begin your journey at Sky Meridian College. Find everything you need to know about requirements, deadlines, and how to apply."
             light
           />
+          <p className="mx-auto mt-6 max-w-2xl text-center text-white/80">
+            Sky Meridian College runs two admission intakes each year —{" "}
+            <span className="font-semibold text-sky-gold">September</span> and{" "}
+            <span className="font-semibold text-sky-gold">January</span>.
+            Select your preferred intake below to view the corresponding
+            deadlines and important dates.
+          </p>
         </Container>
       </section>
 
@@ -94,38 +90,7 @@ export default function AdmissionsPage() {
               </div>
             </div>
             <div className="lg:col-span-2">
-              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-6 md:p-8">
-                <div className="mb-6 flex items-center gap-3">
-                  <Calendar className="h-6 w-6 text-sky-gold" />
-                  <h3 className="text-xl font-semibold text-meridian-navy">
-                    Important Dates
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  {importantDates.map((d) => (
-                    <div
-                      key={d.label}
-                      className="flex items-center justify-between border-b border-soft-blue-gray pb-4 last:border-0 last:pb-0"
-                    >
-                      <span className="text-sm text-muted-gray">{d.label}</span>
-                      <span className="text-sm font-medium text-meridian-navy">
-                        {d.date}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-8 space-y-3">
-                  <Button asChild variant="primary" className="w-full">
-                    <Link href="/contact">Apply Now</Link>
-                  </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/contact">
-                      <Download className="h-4 w-4" />
-                      Download Brochure
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+              <ImportantDates />
             </div>
           </div>
         </Container>

@@ -21,14 +21,15 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="hidden bg-meridian-navy text-xs text-white/80 md:block">
-        <Container>
-          <div className="flex h-8 items-center justify-center">
-            <p className="text-white/60">
-              In Affiliation with Wesley University, Ondo State &middot; {siteConfig.shortName} &middot; College of Health Sciences &amp; Management Technology
-            </p>
+      <div className="hidden overflow-hidden bg-meridian-navy text-xs md:block">
+        <div className="flex h-8 items-center">
+          <div className="animate-marquee flex shrink-0 items-center gap-12 whitespace-nowrap">
+            <span className="text-sky-gold font-medium uppercase tracking-wider">★ Admission for September Intake 2026 Ongoing ★</span>
+            <span className="text-white/60">In Affiliation with Wesley University, Ondo State &middot; {siteConfig.shortName} &middot; College of Health Sciences &amp; Management Technology</span>
+            <span className="text-sky-gold font-medium uppercase tracking-wider">★ Admission for September Intake 2026 Ongoing ★</span>
+            <span className="text-white/60">In Affiliation with Wesley University, Ondo State &middot; {siteConfig.shortName} &middot; College of Health Sciences &amp; Management Technology</span>
           </div>
-        </Container>
+        </div>
       </div>
       <div className="border-b border-soft-blue-gray">
         <Container>

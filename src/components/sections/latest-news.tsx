@@ -5,14 +5,6 @@ import type { NewsItem } from "@/types"
 
 const news: NewsItem[] = [
   {
-    id: "1",
-    title: "Sky Meridian Receives NUC Accreditation for Three New Programs",
-    date: "June 15, 2026",
-    category: "Accreditation",
-    excerpt: "The National Universities Commission has granted full accreditation to Sky Meridian College for its Nursing, Public Health, and Health Administration programs.",
-    image: "/images/news-1.jpg",
-  },
-  {
     id: "2",
     title: "College Partners with Leading Hospitals for Clinical Placements",
     date: "May 28, 2026",
