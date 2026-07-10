@@ -25,7 +25,7 @@ export function CampusFacilities() {
             return (
               <div
                 key={facility.title}
-                className="flex gap-4 rounded-2xl border border-soft-blue-gray bg-white p-6 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-md"
+                className="flex gap-4 rounded-2xl border border-soft-blue-gray bg-white p-6 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-md"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-sky-gold/10 text-sky-gold">
                   <Icon className="h-6 w-6" />

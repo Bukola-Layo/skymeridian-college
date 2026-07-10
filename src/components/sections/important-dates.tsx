@@ -33,7 +33,7 @@ export function ImportantDates() {
   const [intake, setIntake] = useState<Intake>("january")
 
   return (
-    <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-6 md:p-8">
+    <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-6 shadow-sm md:p-8">
       <div className="mb-6 flex items-center gap-3">
         <Calendar className="h-6 w-6 text-sky-gold" />
         <h3 className="text-xl font-semibold text-meridian-navy">
@@ -41,7 +41,7 @@ export function ImportantDates() {
         </h3>
       </div>
 
-      <div className="mb-6 flex rounded-lg border border-soft-blue-gray bg-white p-1">
+      <div className="mb-6 flex rounded-lg border border-soft-blue-gray bg-white p-1 shadow-sm">
         <button
           onClick={() => setIntake("september")}
           className={`flex-1 rounded-md px-3 py-2 text-center text-sm font-medium transition-colors ${

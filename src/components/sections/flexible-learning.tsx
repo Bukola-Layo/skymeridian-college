@@ -177,7 +177,7 @@ export function FlexibleAcademicLearning() {
         </p>
 
         <div className="mx-auto max-w-5xl">
-          <div className="mb-6 flex gap-2 rounded-2xl border border-soft-blue-gray bg-light-gray p-2">
+          <div className="mb-6 flex gap-2 rounded-2xl border border-soft-blue-gray bg-light-gray p-2 shadow-sm">
             {programmes.map((p) => {
               const Icon = p.icon
               const isActive = activeId === p.id
@@ -199,7 +199,7 @@ export function FlexibleAcademicLearning() {
             })}
           </div>
 
-          <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-6 md:p-8">
+          <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-6 shadow-sm md:p-8">
             <AnimatePresence mode="wait">
               <motion.div
                 key={active.id}
@@ -226,7 +226,7 @@ export function FlexibleAcademicLearning() {
                   {active.description}
                 </p>
 
-                <div className="mt-6 divide-y divide-soft-blue-gray rounded-lg border border-soft-blue-gray bg-white">
+                <div className="mt-6 divide-y divide-soft-blue-gray rounded-lg border border-soft-blue-gray bg-white shadow-sm">
                   <Accordion title={active.duration.label} defaultOpen>
                     <ul className="space-y-1.5">
                       {active.duration.items.map((item) => (

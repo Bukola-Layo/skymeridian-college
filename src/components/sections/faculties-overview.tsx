@@ -19,7 +19,7 @@ export function FacultiesOverview() {
           {featuredFaculties.map((faculty) => (
             <div
               key={faculty.id}
-              className="group rounded-2xl border border-soft-blue-gray bg-white p-6 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg"
+              className="group rounded-2xl border border-soft-blue-gray bg-white p-6 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg"
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-meridian-navy-50 text-meridian-navy transition-colors group-hover:bg-meridian-navy group-hover:text-white">
                 <Building2 className="h-6 w-6" />

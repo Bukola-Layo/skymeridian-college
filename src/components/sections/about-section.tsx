@@ -65,7 +65,7 @@ export function AboutSection() {
               return (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-soft-blue-gray bg-light-gray p-5 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-md"
+                  className="rounded-2xl border border-soft-blue-gray bg-light-gray p-5 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-md"
                 >
                   <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-meridian-navy-50 text-meridian-navy">
                     <Icon className="h-5 w-5" />

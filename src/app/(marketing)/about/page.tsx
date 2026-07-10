@@ -56,7 +56,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-16 grid gap-8 md:grid-cols-3">
-              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8">
+              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8 shadow-sm">
                 <h3 className="text-xl font-bold text-meridian-navy">Our Vision</h3>
                 <p className="mt-4 text-muted-gray leading-relaxed">
                   To be a leading institution in health sciences and management technology
@@ -64,7 +64,7 @@ export default function AboutPage() {
                   healthcare delivery and business innovation across Africa and beyond.
                 </p>
               </div>
-              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8">
+              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8 shadow-sm">
                 <h3 className="text-xl font-bold text-meridian-navy">Our Mission</h3>
                 <p className="mt-4 text-muted-gray leading-relaxed">
                   To provide accessible, high-quality education that integrates theoretical
@@ -73,7 +73,7 @@ export default function AboutPage() {
                   organisational excellence.
                 </p>
               </div>
-              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8">
+              <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8 shadow-sm">
                 <h3 className="text-xl font-bold text-meridian-navy">Our Values</h3>
                 <p className="mt-4 text-muted-gray leading-relaxed">
                   Excellence, Integrity, Innovation, Compassion, Professionalism, and

@@ -37,7 +37,7 @@ export function Welcome() {
             return (
               <div
                 key={feature.title}
-                className="group rounded-2xl border border-soft-blue-gray bg-white p-8 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg"
+                className="group rounded-2xl border border-soft-blue-gray bg-white p-8 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg"
               >
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-meridian-navy-50 text-meridian-navy transition-colors group-hover:bg-meridian-navy group-hover:text-white">
                   <Icon className="h-7 w-7" />

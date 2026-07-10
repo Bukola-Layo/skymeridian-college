@@ -30,7 +30,7 @@ export function AdmissionPathways({ pathways }: AdmissionPathwaysProps) {
         ))}
       </div>
 
-      <div className="mt-6 rounded-2xl border border-soft-blue-gray bg-light-gray p-6 md:p-8">
+      <div className="mt-6 rounded-2xl border border-soft-blue-gray bg-light-gray p-6 shadow-sm md:p-8">
         <p className="mb-6 text-muted-gray">{active.description}</p>
         {active.sections.map((section) => (
           <div key={section.title} className="mb-6 last:mb-0">

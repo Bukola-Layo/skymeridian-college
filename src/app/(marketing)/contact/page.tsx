@@ -68,7 +68,7 @@ export default function ContactPage() {
                 })}
               </div>
             </div>
-            <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8">
+            <div className="rounded-2xl border border-soft-blue-gray bg-light-gray p-8 shadow-sm">
               <h3 className="mb-6 text-xl font-semibold text-meridian-navy">
                 Send Us a Message
               </h3>

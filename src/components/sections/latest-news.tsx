@@ -34,7 +34,7 @@ export function LatestNews() {
           {news.map((item) => (
             <article
               key={item.id}
-              className="group cursor-pointer rounded-2xl border border-soft-blue-gray bg-white transition-all duration-300 hover:shadow-lg"
+              className="group cursor-pointer rounded-2xl border border-soft-blue-gray bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
             >
               <div className="aspect-[16/9] rounded-t-2xl bg-gradient-to-br from-meridian-navy-200 to-meridian-navy-400" />
               <div className="p-6">

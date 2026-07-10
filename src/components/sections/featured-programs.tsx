@@ -18,7 +18,7 @@ export function FeaturedPrograms() {
             <Link
               key={program.id}
               href="/programs"
-              className="group rounded-2xl border border-soft-blue-gray bg-white p-6 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg md:p-8"
+              className="group rounded-2xl border border-soft-blue-gray bg-white p-6 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg md:p-8"
             >
               <div className="flex items-start justify-between">
                 <div>

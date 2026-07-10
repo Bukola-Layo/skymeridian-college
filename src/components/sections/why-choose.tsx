@@ -45,7 +45,7 @@ const row2 = reasons.slice(mid)
 function Card({ reason }: { reason: (typeof reasons)[number] }) {
   const Icon = reason.icon
   return (
-    <div className="group w-[280px] shrink-0 rounded-2xl border border-soft-blue-gray bg-white p-6 transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg sm:w-[300px]">
+    <div className="group w-[280px] shrink-0 rounded-2xl border border-soft-blue-gray bg-white p-6 shadow-sm transition-all duration-300 hover:border-meridian-navy/20 hover:shadow-lg sm:w-[300px]">
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-meridian-navy-50 text-meridian-navy transition-colors group-hover:bg-meridian-navy group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>

@@ -57,7 +57,7 @@ export default function FacultiesPage() {
                       {faculty.departments.map((dept) => (
                         <div
                           key={dept}
-                          className="flex items-center gap-3 rounded-xl border border-soft-blue-gray p-4 transition-colors hover:border-meridian-navy/20 hover:bg-meridian-navy-50/50"
+                          className="flex items-center gap-3 rounded-xl border border-soft-blue-gray p-4 shadow-sm transition-colors hover:border-meridian-navy/20 hover:bg-meridian-navy-50/50"
                         >
                           <ArrowRight className="h-4 w-4 shrink-0 text-sky-gold" />
                           <span className="text-sm text-muted-gray">{dept}</span>
