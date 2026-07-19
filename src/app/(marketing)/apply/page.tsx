@@ -124,13 +124,13 @@ export default function ApplyPage() {
                     .
                   </p>
                   <Button asChild variant="primary" size="lg" className="mt-6 w-full">
-                    <a href="/forms/Sky_Meridian_College_Application_Form.docx" download>
+                    <a href="/forms/Sky%20meridian%20application%20form.pdf" download>
                       <Download className="h-5 w-5" />
                       Download Form
                     </a>
                   </Button>
                   <p className="mt-3 text-xs text-muted-gray">
-                    DOCX format — print or fill digitally
+                    PDF format — print or fill digitally
                   </p>
                 </div>
               </div>
