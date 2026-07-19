@@ -124,7 +124,7 @@ export default function ApplyPage() {
                     .
                   </p>
                   <Button asChild variant="primary" size="lg" className="mt-6 w-full">
-                    <a href="/forms/Sky%20meridian%20application%20form.pdf" download>
+                    <a href="/forms/Sky-meridian-application-form.pdf" download>
                       <Download className="h-5 w-5" />
                       Download Form
                     </a>
