@@ -10,8 +10,8 @@ export const siteConfig: SiteConfig = {
   contact: {
     address: "1, Adifala street, Ososami Ring road, Iyana Adeoyo Busstop, Ibadan, Oyo state",
     phone: "+234 800 000 0000",
-    email: "info@skymeridian.edu.ng",
-    admissionsEmail: "admissions@skymeridian.edu.ng",
+    email: "skymeridiancollege@gmail.com",
+    admissionsEmail: "skymeridiancollege@gmail.com",
   },
   social: {
     facebook: "https://facebook.com/skymeridian",

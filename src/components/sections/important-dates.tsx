@@ -80,7 +80,7 @@ export function ImportantDates() {
 
       <div className="mt-8 space-y-3">
         <Button asChild variant="primary" className="w-full">
-          <Link href="/contact">Apply Now</Link>
+          <Link href="/apply">Apply Now</Link>
         </Button>
         <Button asChild variant="outline" className="w-full">
           <Link href="/contact">

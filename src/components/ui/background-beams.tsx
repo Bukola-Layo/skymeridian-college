@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
 
 const paths = [
@@ -32,6 +32,16 @@ interface BackgroundBeamsProps {
 
 export function BackgroundBeams({ className }: BackgroundBeamsProps) {
   const svgRef = useRef<SVGSVGElement>(null)
+  const [animations, setAnimations] = useState<string[]>([])
+
+  useEffect(() => {
+    setAnimations(
+      paths.map(
+        (_, index) =>
+          `beam-move ${2 + Math.random() * 3}s ease-in-out ${index * 0.15}s infinite`,
+      ),
+    )
+  }, [])
 
   useEffect(() => {
     const handleVisibility = () => {
@@ -68,7 +78,7 @@ export function BackgroundBeams({ className }: BackgroundBeamsProps) {
             strokeWidth="0.8"
             fill="none"
             style={{
-              animation: `beam-move ${2 + Math.random() * 3}s ease-in-out ${index * 0.15}s infinite`,
+              animation: animations[index],
             }}
           />
         ))}
